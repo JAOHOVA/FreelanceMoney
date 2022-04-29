@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p><a href="/StudiLive2022ProjetJS/FreelanceMoney/FreelanceMoney.html">Go to FreelanceMoneyCalculator</a></p>
+    <header>
+        <h1>WYSIWYG</h1>
+        <i>(what you see is what you get) </i>
+    </header>
+    <fieldset>
+        <legend>Mon wysiwyg</legend>
+        <div class="field-container">
+            <label>Titre</label>
+            <input class="onChangeRefreshWysiwyg" type="text" id="titreWysiwyg"/>
+
+            <label>Couleur du titre</label>
+            <input type="text" class="onChangeRefreshWysiwyg" id="colorTitleWysiwyg" />
+
+            <label>Taille du titre</label>
+            <input type="number" class="onChangeRefreshWysiwyg" id="tailleTitleWysiwyg" value="21"/>
+        </div>
+        <div class="field-container">
+            <label>Source de l'image</label>
+            <input class="onChangeRefreshWysiwyg" type="text" id="imgWysiwyg"/>
+
+            <label>Largeur max</label>
+            <input value="300" class="onChangeRefreshWysiwyg" type="range" min="15" max="1000" id="imgMaxWidthWysiwyg"/>
+        </div>
+        <div class="field-container">
+            <label>Contenu</label>
+            <textarea class="onChangeRefreshWysiwyg" type="text" id="contentWysiwyg"></textarea>
+        </div>
+
+        <div class="field-container">
+            <button id="btnGenererWysiwyg">Générer</button>
+        </div>
+    </fieldset>
+
+    <div id="resultatWysiwyg">
+        <h2 id="titreWysiwygResultat"></h2>
+        <img src="" id="imgWysiwygResultat" />
+        <p id="contentWysiwygResultat"></p>
+    </div>
+
+    <script src="site.js"></script>
+</body>
+</html>

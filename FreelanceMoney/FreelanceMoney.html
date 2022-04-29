@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="FreelanceMoney.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>Freelance Money Calculator</h1>
+        </header>
+        <main class="container">
+            <form class="formCalcul" id="formCalculGain">
+                <div class="sectionCalcul pricing">
+                    <fieldset class="form-content">
+                        <legend>Vos tarifs</legend>
+                        <div class="form-field">
+                            <label>TH</label>
+                            <input class="form-control" name="TH" type="number" placeholder="Ex : 70"/>
+                        </div>
+                        <div class="form-field">
+                            <label>TJM</label>
+                            <input class="form-control" name="TJM" type="number" placeholder="Ex : 740"/>
+                        </div>
+                        <div class="form-field">
+                            <label>Extras</label>
+                            <input class="form-control" name="Extras" type="number" placeholder="Ex : 47"/>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="sectionCalcul qte">
+                    <fieldset class="form-content">
+                        <legend>Quantités</legend>
+                        <div class="form-field">
+                            <label>TH</label>
+                            <input class="form-control" name="QteTH" type="number" placeholder="Ex : 140"/>
+                        </div>
+                        <div class="form-field">
+                            <label>TJM</label>
+                            <input class="form-control" name="QteTJM" type="number" placeholder="Ex : 30"/>
+                        </div>
+                        <div class="form-field">
+                            <label>Extras</label>
+                            <input class="form-control" name="QteExtras" type="number" placeholder="Ex : 7"/>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="sectionCalcul fees">
+                    <fieldset class="form-content ">
+                        <legend>Charges</legend>
+                        <div class="form-field">
+                            <label>Charge</label>
+                            <input class="form-control" name="Charges" type="number" placeholder="Ex : 140"/>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="sectionCalcul validation">
+                    <button id="buttonValidation" type="button" class="styled" >Calculer</button>
+                </div>
+                <div class="result">
+                    <div class="form-container">
+                        <div class="resultDiv resultBrut">
+                            <p>BRUT</p>
+                            <span id="resultatBrut">0€</span>
+                        </div>
+                        <div class="resultDiv resultDifference">
+                            <p>TAXES</p>
+                            <span id="resultatDifference">0€</span>
+                        </div>
+                        <div class="resultDiv resultNet">
+                            <p>NET</p>
+                            <span id="resultatNet">0€</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        
+        </main>
+        
+    </div>
+
+    <script src="FreelanceMoney.js"></script>
+</body>
+</html>
